@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JournalApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">My Diary</string>
+    <string name="web_client_id">632371350589-uj4tb9n00vfb10836635gd6jc80ijsut.apps.googleusercontent.com</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="add_journal">Pen \n My \nThought!</string>
+    <string name="splash_message">Have all your thoughts and feelings in one place. The easiest way to pen down every single thing on your mind!!!</string>
+    <string name="demo_diary">Last Night i had an amazing experience with Kolapo a long time friend</string>
+    <string name="action_discard">Discard changes</string>
+    <string name="action_calendar">Calendar</string>
+    <string name="display_name_values">%1$s\ %2$s\</string>
+    <string name="profile_success">Profile Update Successful!</string>
+    <string name="diary_description_hint">Pen your thoughts...</string>
+    <string name="action_share">Share</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+</resources>
