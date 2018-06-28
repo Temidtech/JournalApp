@@ -1,5 +1,5 @@
 
-# JournalApp  [![CircleCI](https://circleci.com/gh/Temidtech/MedManager.svg?style=svg)](https://circleci.com/gh/Temidtech/MedManager)[![Maintainability](https://api.codeclimate.com/v1/badges/6be98a056b6b38c72670/maintainability)](https://codeclimate.com/github/Temidtech/MedManager/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/6be98a056b6b38c72670/test_coverage)](https://codeclimate.com/github/Temidtech/MedManager/test_coverage)
+# JournalApp  [![CircleCI](https://circleci.com/gh/Temidtech/MedManager.svg?style=svg)](https://circleci.com/gh/Temidtech/MedManager)[![Maintainability](https://api.codeclimate.com/v1/badges/44bc9dbd899d3ba49efe/maintainability)](https://codeclimate.com/github/Temidtech/JournalApp/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/6be98a056b6b38c72670/test_coverage)](https://codeclimate.com/github/Temidtech/MedManager/test_coverage)
 
 JournalApp allows users to pen down their thoughts and feelings.
 ## Quick Set Up
