@@ -32,7 +32,7 @@ The User is required to add diary entry, using the pen my thought button icon on
 ### Diary List
 User can see a list of all entries sorted by date.
 
-<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/diaries.png" width="280"/> <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/Screenshot_1523893464.png" width="280"/> 
+<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/diaries.png" width="280"/>
 
 ### Diary [Details] 
 The User can see details of all diary entries!
