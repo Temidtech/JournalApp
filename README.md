@@ -12,7 +12,7 @@ The User will the be presented with the Login Page, where they are required to a
 User will be able to Update Profile
 
 <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/splash.png" width="280"/>   <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/login.png" width="280"/> 
- <img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/updateprofile.png" width="280"/> 
+ <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/updateprofile.png" width="280"/> 
 
 ### Main Dashboard 
 After authentication, user is redirected to the home Dashboard, which is the Home Activity in our app. The Dashboard shows a button to add their thoughts, and gives the User the options to:
@@ -20,21 +20,21 @@ After authentication, user is redirected to the home Dashboard, which is the Hom
 * Add New Diary Entry
 * Access profile and diary entries
 
-When Dashbopard is empty:
+User Dashbopard:
 
-<img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/Screenshot_1523292999.png" width="280"/> <img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/Screenshot_1523293004.png" width="280"/> 
+<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/splashloading.png" width="280"/> <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/dashboard.png" width="280"/> 
 
-### Medication [Add Medication] 
-The User is required to add Medication, using the Add Medication icon on the Home Dashboard. This is how the process looks like :
+### Diary Entry [Add Diary Entry] 
+The User is required to add diary entry, using the pen my thought button icon on the Home Dashboard. This is how the process looks like :
 
-<img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/Screenshot_1523891696.png" width="280"/>
+<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/add_diary.png" width="280"/>
 
-### Medication List and History
-User can see a list of all medications sorted by month.
+### Diary List
+User can see a list of all entries sorted by date.
 
-<img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/Screenshot_1523437652.png" width="280"/> <img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/Screenshot_1523893464.png" width="280"/> 
+<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/diaries.png" width="280"/> <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/Screenshot_1523893464.png" width="280"/> 
 
-### Medication [Medication Alert] 
-The User receives alert on device at specified time!
+### Diary [Details] 
+The User can see details of all diary entries!
 
-<img src="https://github.com/Temidtech/MedManager/blob/master/screenshots/Screenshot_1523438680.png" width="280"/> 
+<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/details.png" width="280"/> 
