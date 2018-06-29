@@ -28,6 +28,7 @@ User Dashbopard:
 The User is required to add diary entry, using the pen my thought button icon on the Home Dashboard. This is how the process looks like :
 
 <img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/add_diary.png" width="280"/>
+<img src="https://github.com/Temidtech/JournalApp/blob/master/screenshots/add_diary2.png" width="280"/>
 
 ### Diary List
 User can see a list of all entries sorted by date.
