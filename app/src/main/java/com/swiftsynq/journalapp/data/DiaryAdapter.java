@@ -37,9 +37,13 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.TaskHolder> 
 
     /* ViewHolder for each task item */
     public class TaskHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        @BindView(R.id.tvDate)
         public TextView dateView;
+        @BindView(R.id.tvDescription)
         public TextView tvDescription;
+        @BindView(R.id.tvTitle)
         public TextView tvTitle;
+        @BindView(R.id.imgFav)
         public ImageView imgFav;
         @BindView(R.id.letterIcon)
         MaterialLetterIcon letterIcon;
@@ -48,10 +52,6 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.TaskHolder> 
         public TaskHolder(View itemView) {
             super(itemView);
 
-            dateView = (TextView) itemView.findViewById(R.id.tvDate);
-            tvDescription = (TextView) itemView.findViewById(R.id.tvDescription);
-            tvTitle=(TextView) itemView.findViewById(R.id.tvTitle);
-            imgFav=(ImageView)itemView.findViewById(R.id.imgFav);
             itemView.setOnClickListener(this);
             ButterKnife.bind(this,itemView);
         }

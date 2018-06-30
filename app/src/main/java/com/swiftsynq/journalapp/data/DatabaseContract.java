@@ -9,7 +9,7 @@ public class DatabaseContract {
     public static final String TABLE_DIARIES = "dairies";
 
     public static final class DiaryColumns implements BaseColumns {
-        //Task description
+        //Diary description
         public static final String DESCRIPTION = "description";
         //Favourite
         public static final String IS_FAVOURITE = "is_favourite";
@@ -22,7 +22,6 @@ public class DatabaseContract {
     public static final String CONTENT_AUTHORITY = "com.swiftsynq.journalapp";
 
     /* Sort order constants */
-    //Priority first, Completed last, the rest by date
     public static final String DEFAULT_SORT = String.format("%s ASC, %s DESC",
             DiaryColumns.DIARY_DATE, DiaryColumns.IS_FAVOURITE);
 

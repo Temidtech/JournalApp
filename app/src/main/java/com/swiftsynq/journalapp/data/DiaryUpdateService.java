@@ -60,19 +60,19 @@ public class DiaryUpdateService extends IntentService {
 
     private void performInsert(ContentValues values) {
         if (getContentResolver().insert(DatabaseContract.CONTENT_URI, values) != null) {
-            Log.d(TAG, "Inserted new task");
+            Log.d(TAG, "Inserted new diary");
         } else {
-            Log.w(TAG, "Error inserting new task");
+            Log.w(TAG, "Error inserting new diary");
         }
     }
 
     private void performUpdate(Uri uri, ContentValues values) {
         int count = getContentResolver().update(uri, values, null, null);
-        Log.d(TAG, "Updated " + count + " task items");
+        Log.d(TAG, "Updated " + count + " diary items");
     }
 
     private void performDelete(Uri uri) {
         int count = getContentResolver().delete(uri, null, null);
-        Log.d(TAG, "Deleted "+count+" tasks");
+        Log.d(TAG, "Deleted "+count+" diaries");
     }
 }

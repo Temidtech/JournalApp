@@ -9,7 +9,7 @@ import com.swiftsynq.journalapp.R;
 import com.swiftsynq.journalapp.data.DatabaseContract.DiaryColumns;
 public class JournalDbHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "tasks.db";
+    private static final String DATABASE_NAME = "diaries.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String SQL_CREATE_TABLE_TASKS = String.format("CREATE TABLE %s"

@@ -25,12 +25,10 @@ public class DiaryProvider extends ContentProvider {
 
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     static {
-        // content://com.google.developer.taskmaker/tasks
         sUriMatcher.addURI(DatabaseContract.CONTENT_AUTHORITY,
                 DatabaseContract.TABLE_DIARIES,
                 DIARIES);
 
-        // content://com.google.developer.taskmaker/tasks/id
         sUriMatcher.addURI(DatabaseContract.CONTENT_AUTHORITY,
                 DatabaseContract.TABLE_DIARIES + "/#",
                 DIARIES_WITH_ID);
