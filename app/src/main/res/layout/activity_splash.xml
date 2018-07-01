@@ -50,7 +50,7 @@
         android:text="@string/splash_message"
         android:textAlignment="center"
         android:textColor="#fff"
-        app:layout_constraintBottom_toTopOf="@+id/circleWithArcProgress"
+        app:layout_constraintBottom_toTopOf="@+id/signInProgress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
