@@ -37,7 +37,7 @@
                 app:mli_letter_color="@android:color/white"
                 app:mli_letter_size="26"
                 app:mli_letters_number="2"
-                app:mli_shape_color="@color/colorPrimaryDark"
+                app:mli_shape_color="@color/colorAccentDark"
                 app:mli_shape_type="circle" />
 
             <LinearLayout
@@ -62,6 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:maxLines="4"
                     android:fontFamily="@font/gotham"
                     tools:text="ghdggdgdgdgdgdgdgdgdgdgdggdgdgdgdhdghhdhdhhhdhdhdhhdhdhdhdhdhdhdhdhdhdhdhhddhhdhdhdhhdhdhdhdhhdhdhdhhdhdhdhhdhdhdhdhdhhdhdhhhdhdhhdhhgfgfggfgdhdhhhdhdhdhdhhdhdhdhdhdhdhdhdhdhndndndndndhdhdhdhdhhdhdddgfgfgdddghdhjgdgjdgjdgdgdgjdgdgdgdgdjgjdgdjgddggdjdgjdgjdgdgdgdgdgddjdgjgdgd" />
 

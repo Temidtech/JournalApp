@@ -11,6 +11,8 @@ public class DatabaseContract {
     public static final class DiaryColumns implements BaseColumns {
         //Diary description
         public static final String DESCRIPTION = "description";
+        //Title
+        public static final String TITLE = "title";
         //Favourite
         public static final String IS_FAVOURITE = "is_favourite";
         //Completion date (can be null)

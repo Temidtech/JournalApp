@@ -16,4 +16,6 @@
     <string name="action_share">Share</string>
     <string name="action_save">Save</string>
     <string name="action_edit">Edit</string>
+    <string name="title_stories">My Stories</string>
+    <string name="diary_title">Title</string>
 </resources>

@@ -95,6 +95,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.TaskHolder> 
         // Indices for the _id, description, and priority columns
         int idIndex = mCursor.getColumnIndex(DatabaseContract.DiaryColumns._ID);
         int descriptionIndex = mCursor.getColumnIndex(DatabaseContract.DiaryColumns.DESCRIPTION);
+        int titleIndex = mCursor.getColumnIndex(DatabaseContract.DiaryColumns.TITLE);
         final int favouriteIndex = mCursor.getColumnIndex(DatabaseContract.DiaryColumns.IS_FAVOURITE);
         int dateIndex = mCursor.getColumnIndex(DatabaseContract.DiaryColumns.DIARY_DATE);
         mCursor.moveToPosition(position); // get to the right location in the cursor
@@ -102,12 +103,13 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.TaskHolder> 
         // Determine the values of the wanted data
         final int id = mCursor.getInt(idIndex);
         String description = mCursor.getString(descriptionIndex);
+        String title = mCursor.getString(titleIndex);
         long diarydate = mCursor.getLong(dateIndex);
         int favourite = mCursor.getInt(favouriteIndex);
         //Set values
         holder.itemView.setTag(id);
         holder.tvDescription.setText(description);
-        holder.tvTitle.setText(firstWords(description,4)+"...");
+        holder.tvTitle.setText(title);
         holder.imgFav.setImageResource(getFavouriteImage(favourite));
         holder.dateView.setText(DateUtils.getRelativeTimeSpanString(diarydate));
         holder.letterIcon.setLetter("MD");
@@ -176,7 +178,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.TaskHolder> 
 
     @Override
     public long getItemId(int position) {
-        return getItem(position).id;
+        return getItem(position).getId();
     }
 
     public void swapCursor(Cursor cursor) {

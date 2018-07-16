@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.swiftsynq.journalapp.Fragment.DiaryFragment;
 import com.swiftsynq.journalapp.Fragment.HomeFragment;
 import com.swiftsynq.journalapp.Fragment.ProfileFragment;
+import com.swiftsynq.journalapp.Fragment.StoriesFragment;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -29,6 +30,9 @@ public class DashboardActivity extends AppCompatActivity {
                     break;
                 case R.id.navigation_dashboard:
                     selectedFragment= DiaryFragment.newInstance();
+                    break;
+                case R.id.navigation_stories:
+                    selectedFragment= StoriesFragment.newInstance();
                     break;
                 case R.id.navigation_profile:
                     selectedFragment= ProfileFragment.newInstance();

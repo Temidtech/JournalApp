@@ -54,10 +54,14 @@ public class DiaryFragment extends Fragment implements
         mAdapter = new DiaryAdapter(getActivity());
         RecyclerView recyclerView = (RecyclerView)rootView.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        if(mAdapter!=null)
+        if(mAdapter!=null) {
+            imgEmpty.setVisibility(View.GONE);
             recyclerView.setVisibility(View.VISIBLE);
-        else
+        }
+        else {
             imgEmpty.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        }
         recyclerView.setAdapter(mAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         getActivity().getSupportLoaderManager().initLoader(TASK_LOADER_ID, null, this);

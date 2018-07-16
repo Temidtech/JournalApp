@@ -55,6 +55,8 @@ public class AddNewDiaryActivity extends AppCompatActivity implements
     private Calendar mDueDate;
     @BindView(R.id.edtDescription)
     EditText edtDescription;
+    @BindView(R.id.edtTitle)
+    EditText edtTitle;
     private int year;
     private int month;
     private int day;
@@ -82,8 +84,8 @@ public class AddNewDiaryActivity extends AppCompatActivity implements
             if (activity.getSupportActionBar() != null) {
                 if(diaryUri!=null)
                 {
-                    String[] projection = {DatabaseContract.DiaryColumns.DESCRIPTION,
-                            DatabaseContract.DiaryColumns.IS_FAVOURITE, DatabaseContract.DiaryColumns.DIARY_DATE };
+                    String[] projection = {DatabaseContract.DiaryColumns.DESCRIPTION, DiaryColumns.TITLE,
+                            DatabaseContract.DiaryColumns.IS_FAVOURITE, DatabaseContract.DiaryColumns.DIARY_DATE};
 
 
                     Cursor cursor = getContentResolver().query(diaryUri,
@@ -93,7 +95,8 @@ public class AddNewDiaryActivity extends AppCompatActivity implements
                     if (cursor.moveToFirst()) {
                         cursor.moveToFirst();
                         edtDescription.setText(cursor.getString(0));
-                        long duedate=cursor.getLong(1);
+                        long duedate=cursor.getLong(3);
+                        edtTitle.setText(cursor.getString(1));
                         if (duedate!=0)
                             setActionTitle(String.valueOf(DateUtils.getRelativeTimeSpanString(duedate)));
                         cursor.close();
@@ -192,7 +195,7 @@ public class AddNewDiaryActivity extends AppCompatActivity implements
     }
     private void addtoFirebase()
     {
-        final DiaryEntry entry=new DiaryEntry(edtDescription.getText().toString(),true,getDateSelection());
+        final DiaryEntry entry=new DiaryEntry(edtDescription.getText().toString(),true,getDateSelection(),"App");
         // User data change listener
         mDatabase.child("users").child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -217,8 +220,9 @@ public class AddNewDiaryActivity extends AppCompatActivity implements
     }
     private void saveItem() {
         //Insert a new item
-        ContentValues values = new ContentValues(3);
+        ContentValues values = new ContentValues(4);
         values.put(DiaryColumns.DESCRIPTION, edtDescription.getText().toString());
+        values.put(DiaryColumns.TITLE, edtTitle.getText().toString());
         values.put(DiaryColumns.IS_FAVOURITE, 0);
         values.put(DiaryColumns.DIARY_DATE, getDateSelection());
         DiaryUpdateService.insertNewTask(this, values);
@@ -229,8 +233,9 @@ public class AddNewDiaryActivity extends AppCompatActivity implements
     }
     private void updateItem(Uri uri) {
         //UPDATE a new item
-        ContentValues values = new ContentValues(3);
+        ContentValues values = new ContentValues(4);
         values.put(DiaryColumns.DESCRIPTION, edtDescription.getText().toString());
+        values.put(DiaryColumns.TITLE, edtTitle.getText().toString());
         values.put(DiaryColumns.IS_FAVOURITE, 0);
         values.put(DiaryColumns.DIARY_DATE, getDateSelection());
         DiaryUpdateService.updateTask(this,uri, values);

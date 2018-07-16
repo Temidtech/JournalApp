@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "632371350589-uj4tb9n00vfb10836635gd6jc80ijsut.apps.googleusercontent.com",
+          "client_id": "632371350589-du44ftc3lc4g2plaq1tq6uj1k04qmm17.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.swiftsynq.journalapp",
-            "certificate_hash": "78a4cdf1b2d79c867488176c380dbad8c534330c"
+            "certificate_hash": "b5f39aa622e0027e9673a64da46c4ebc88d27e47"
           }
         },
         {

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.jakewharton.butterknife'
 def BUTTER_KNIFE_VERSION="8.5.1" //current version of butterknife
 def FIREBASE_VERSION = "15.0.0"
@@ -34,6 +35,7 @@ android {
 repositories {
     maven { url "https://maven.google.com" }
     maven { url 'https://jitpack.io' }
+    mavenCentral()
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -41,7 +43,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     implementation 'com.android.support:design:27.1.0'
     implementation 'com.android.support:support-vector-drawable:27.1.0'
-    testCompile 'com.android.support.test:runner:0.2'
+    testImplementation 'com.android.support.test:runner:0.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation "com.jakewharton:butterknife:$BUTTER_KNIFE_VERSION"
@@ -57,7 +59,9 @@ dependencies {
     implementation 'com.android.support:cardview-v7:27.1.0'
     implementation 'com.android.support:support-annotations:27.1.1'
     implementation 'com.github.amanjeetsingh150:CoolProgressViews:1.0'
-    testCompile 'com.android.support.test:runner:0.2'
+    testImplementation 'com.android.support.test:runner:0.2'
     implementation 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.2.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(path: ':storyboard', configuration: 'default')
 }
 apply plugin: 'com.google.gms.google-services'
